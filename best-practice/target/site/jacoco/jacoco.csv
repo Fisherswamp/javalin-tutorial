@@ -1,0 +1,17 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+NCTRCBackend,org.nctrc.backend.config,Constants,0,16,0,0,0,4,0,1,0,1
+NCTRCBackend,org.nctrc.backend.config,DatabaseConfigInformation,0,21,0,0,0,8,0,4,0,4
+NCTRCBackend,org.nctrc.backend.config,DatabaseConstants,0,155,0,0,0,26,0,1,0,1
+NCTRCBackend,org.nctrc.backend.managers,DatabaseManager,191,519,6,8,41,118,7,16,2,14
+NCTRCBackend,org.nctrc.backend.managers,UsersManager,107,270,3,17,29,66,5,14,2,7
+NCTRCBackend,org.nctrc.backend.model.internal,SigninTimeIdPair,0,15,0,0,0,6,0,3,0,3
+NCTRCBackend,org.nctrc.backend.model.internal,SigninStatus,10,30,2,4,2,11,2,6,0,5
+NCTRCBackend,org.nctrc.backend.model.internal,DayTimeline,20,78,4,4,4,19,4,8,0,8
+NCTRCBackend,org.nctrc.backend.model.response,Result,9,12,0,0,2,5,2,2,2,2
+NCTRCBackend,org.nctrc.backend.model.response,UserExistsResult,0,11,0,0,0,4,0,2,0,2
+NCTRCBackend,org.nctrc.backend.utility,Utility,0,20,0,0,0,5,0,2,0,2
+NCTRCBackend,org.nctrc.backend.model.request,UserRequestModel,12,49,3,3,3,13,4,6,1,6
+NCTRCBackend,org.nctrc.backend.model.request,SigninDataRequestModel,0,15,0,0,0,6,0,3,0,3
+NCTRCBackend,org.nctrc.backend.model.request,UpdateMaxCapacityRequestModel,9,0,0,0,4,0,2,0,2,0
+NCTRCBackend,org.nctrc.backend.model.request,NewUserRequestModel,0,21,0,0,0,8,0,4,0,4
+NCTRCBackend,org.nctrc.backend.model.request,SigninRequestModel,0,15,0,0,0,6,0,3,0,3

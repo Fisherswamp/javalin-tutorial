@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NewUserRequestModel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">NCTRCBackend</a> &gt; <a href="index.source.html" class="el_package">org.nctrc.backend.model.request</a> &gt; <span class="el_source">NewUserRequestModel.java</span></div><h1>NewUserRequestModel.java</h1><pre class="source lang-java linenums">package org.nctrc.backend.model.request;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class NewUserRequestModel {
+
+  private final UserRequestModel user;
+
+  private final String signature;
+
+  private final SigninDataRequestModel signinData;
+
+  @JsonCreator
+  public NewUserRequestModel(
+      @JsonProperty(&quot;user&quot;) final UserRequestModel user,
+      @JsonProperty(&quot;signature&quot;) final String signature,
+<span class="fc" id="L18">      @JsonProperty(&quot;signinData&quot;) final SigninDataRequestModel signinData) {</span>
+<span class="fc" id="L19">    this.user = user;</span>
+<span class="fc" id="L20">    this.signature = signature;</span>
+<span class="fc" id="L21">    this.signinData = signinData;</span>
+<span class="fc" id="L22">  }</span>
+
+  public UserRequestModel getUser() {
+<span class="fc" id="L25">    return user;</span>
+  }
+
+  public String getSignature() {
+<span class="fc" id="L29">    return signature;</span>
+  }
+
+  public SigninDataRequestModel getSigninData() {
+<span class="fc" id="L33">    return signinData;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

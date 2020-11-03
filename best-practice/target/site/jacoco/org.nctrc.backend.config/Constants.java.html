@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Constants.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">NCTRCBackend</a> &gt; <a href="index.source.html" class="el_package">org.nctrc.backend.config</a> &gt; <span class="el_source">Constants.java</span></div><h1>Constants.java</h1><pre class="source lang-java linenums">package org.nctrc.backend.config;
+
+import com.amazonaws.regions.Regions;
+import java.text.SimpleDateFormat;
+import java.util.TimeZone;
+
+public final class Constants {
+
+  public static final String MAIN_PATH = &quot;api/&quot;;
+
+  public static final String USER_PATH = &quot;user/&quot;;
+
+  public static final String ADMIN_PATH = &quot;admin/&quot;;
+
+  public static final String ADMIN_UPDATE_CAPACITY_PATH = &quot;capacity&quot;;
+
+  public static final String ADMIN_LOGGED_IN_PATH = &quot;loggedin&quot;;
+
+  public static final String USER_SIGNIN_PATH = &quot;signin&quot;;
+
+  public static final String USER_SIGNOUT_PATH = &quot;signout&quot;;
+
+  public static final String USER_CREATION_PATH = &quot;create&quot;;
+
+  public static final String USER_DELETION_PATH = &quot;delete&quot;;
+
+  public static final String USER_EXISTS_PATH = &quot;exists&quot;;
+
+  public static final String VERSION = &quot;0.0.1&quot;;
+
+  public static final String TITLE = &quot;Check-in API&quot;;
+
+  public static final String DESCRIPTION =
+      &quot;API for User check-in and contact tracing for NC-Therapeutic Riding Center&quot;;
+
+  public static final String DEFAULT_CONFIG_TYPE = &quot;application/json&quot;;
+
+  public static final String HOST_IP = &quot;0.0.0.0&quot;;
+
+  public static final int PORT = 6600;
+
+  public static final int SSL_PORT = 6700;
+
+  public static final int NUM_MINS_FOR_REJECTED_SIGNIN = 5;
+
+  public static final double FEVER_TEMPERATURE = 100.4;
+
+<span class="fc" id="L48">  public static final Regions REGION = Regions.US_EAST_1;</span>
+
+<span class="fc" id="L50">  public static final SimpleDateFormat ISO_8601 = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);</span>
+
+<span class="fc" id="L52">  public static final SimpleDateFormat ISO_8601_FULL =</span>
+      new SimpleDateFormat(&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;);
+
+<span class="fc" id="L55">  public static final TimeZone TIME_ZONE = TimeZone.getTimeZone(&quot;America/New_York&quot;);</span>
+
+  private Constants() {}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

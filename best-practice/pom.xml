@@ -5,19 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.nctrcriders</groupId>
-    <artifactId>NCTRCBackend</artifactId>
-    <version>0.0.1</version>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.amazonaws</groupId>
-                <artifactId>aws-java-sdk-bom</artifactId>
-                <version>1.11.327</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <artifactId>Javalin-Tutorial</artifactId>
+    <version>1.0.0</version>
     <dependencies>
         <dependency>
             <groupId>com.google.inject</groupId>
@@ -33,18 +22,6 @@
             <groupId>com.google.googlejavaformat</groupId>
             <artifactId>google-java-format</artifactId>
             <version>1.9</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.2.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-runner</artifactId>
-            <version>1.2.0</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.javalin</groupId>
@@ -81,10 +58,6 @@
             <artifactId>maven-shade-plugin</artifactId>
             <version>3.2.4</version>
             <type>maven-plugin</type>
-        </dependency>
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-dynamodb</artifactId>
         </dependency>
     </dependencies>
 

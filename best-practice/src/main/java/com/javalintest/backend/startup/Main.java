@@ -1,9 +1,9 @@
-package com.javalin_test.backend.startup;
+package com.javalintest.backend.startup;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.javalin_test.backend.modules.MainModule;
-import com.javalin_test.backend.startup.entrypoint.EntrypointType;
+import com.javalintest.backend.modules.MainModule;
+import com.javalintest.backend.startup.entrypoint.EntrypointType;
 
 public class Main {
 

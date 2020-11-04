@@ -1,4 +1,4 @@
-package com.javalin_test.backend.startup.entrypoint;
+package com.javalintest.backend.startup.entrypoint;
 
 public interface AppEntrypoint {
   void boot(String[] args);

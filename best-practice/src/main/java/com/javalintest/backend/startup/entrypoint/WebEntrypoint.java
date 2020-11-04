@@ -1,14 +1,14 @@
-package com.javalin_test.backend.startup.entrypoint;
+package com.javalintest.backend.startup.entrypoint;
 
 import static io.javalin.apibuilder.ApiBuilder.delete;
+import static io.javalin.apibuilder.ApiBuilder.get;
 import static io.javalin.apibuilder.ApiBuilder.path;
 import static io.javalin.apibuilder.ApiBuilder.post;
-import static io.javalin.apibuilder.ApiBuilder.get;
 
 import com.google.inject.Inject;
-import com.javalin_test.backend.config.Constants;
-import com.javalin_test.backend.controllers.UserCreationController;
-import com.javalin_test.backend.controllers.UserStatusController;
+import com.javalintest.backend.config.Constants;
+import com.javalintest.backend.controllers.UserCreationController;
+import com.javalintest.backend.controllers.UserStatusController;
 import io.javalin.Javalin;
 
 public class WebEntrypoint implements AppEntrypoint {

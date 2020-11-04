@@ -1,14 +1,11 @@
-package com.javalin_test.backend.managers;
+package com.javalintest.backend.managers;
 
-import com.javalin_test.backend.model.response.Result;
-import com.javalin_test.backend.model.response.UserExistsResult;
+import com.javalintest.backend.model.request.UserRequestModel;
+import com.javalintest.backend.model.response.Result;
+import com.javalintest.backend.model.response.UserExistsResult;
 import java.util.HashSet;
-
 import java.util.Set;
-
 import javax.inject.Singleton;
-
-import com.javalin_test.backend.model.request.UserRequestModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

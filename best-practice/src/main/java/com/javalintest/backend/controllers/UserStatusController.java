@@ -1,6 +1,10 @@
-package com.javalin_test.backend.controllers;
+package com.javalintest.backend.controllers;
 
-import com.javalin_test.backend.model.response.Result;
+import com.javalintest.backend.config.Constants;
+import com.javalintest.backend.managers.UsersManager;
+import com.javalintest.backend.model.request.UserRequestModel;
+import com.javalintest.backend.model.response.Result;
+import com.javalintest.backend.model.response.UserExistsResult;
 import io.javalin.http.Context;
 import io.javalin.plugin.openapi.annotations.HttpMethod;
 import io.javalin.plugin.openapi.annotations.OpenApi;
@@ -9,10 +13,6 @@ import io.javalin.plugin.openapi.annotations.OpenApiRequestBody;
 import io.javalin.plugin.openapi.annotations.OpenApiResponse;
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import com.javalin_test.backend.config.Constants;
-import com.javalin_test.backend.managers.UsersManager;
-import com.javalin_test.backend.model.request.UserRequestModel;
-import com.javalin_test.backend.model.response.UserExistsResult;
 
 @Singleton
 public class UserStatusController extends UserController {

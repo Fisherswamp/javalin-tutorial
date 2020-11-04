@@ -1,8 +1,12 @@
-package com.javalin_test.backend.modules;
+package com.javalintest.backend.modules;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.MapBinder;
-import com.javalin_test.backend.model.response.Result;
+import com.javalintest.backend.config.Constants;
+import com.javalintest.backend.model.response.Result;
+import com.javalintest.backend.startup.entrypoint.AppEntrypoint;
+import com.javalintest.backend.startup.entrypoint.EntrypointType;
+import com.javalintest.backend.startup.entrypoint.WebEntrypoint;
 import io.javalin.Javalin;
 import io.javalin.plugin.openapi.OpenApiOptions;
 import io.javalin.plugin.openapi.OpenApiPlugin;
@@ -15,10 +19,6 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.jetbrains.annotations.NotNull;
-import com.javalin_test.backend.config.Constants;
-import com.javalin_test.backend.startup.entrypoint.AppEntrypoint;
-import com.javalin_test.backend.startup.entrypoint.EntrypointType;
-import com.javalin_test.backend.startup.entrypoint.WebEntrypoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -91,7 +91,7 @@ public class WebModule extends AbstractModule {
             .description(Constants.DESCRIPTION);
     OpenApiOptions options =
         new OpenApiOptions(info)
-            .activateAnnotationScanningFor("org.nctrc.backend")
+            // .activateAnnotationScanningFor("org.nctrc.backend")
             .path("/swagger-docs") // endpoint for OpenAPI json
             .swagger(new SwaggerOptions("/swagger-ui")) // endpoint for swagger-ui
             .reDoc(new ReDocOptions("/redoc")) // endpoint for redoc

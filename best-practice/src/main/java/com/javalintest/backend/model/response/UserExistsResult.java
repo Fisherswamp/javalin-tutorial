@@ -1,4 +1,4 @@
-package com.javalin_test.backend.model.response;
+package com.javalintest.backend.model.response;
 
 public class UserExistsResult extends Result {
 

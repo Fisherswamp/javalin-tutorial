@@ -1,4 +1,4 @@
-package com.javalin_test.backend.config;
+package com.javalintest.backend.config;
 
 public final class Constants {
 

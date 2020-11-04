@@ -1,5 +1,9 @@
-package com.javalin_test.backend.controllers;
+package com.javalintest.backend.controllers;
 
+import com.javalintest.backend.config.Constants;
+import com.javalintest.backend.managers.UsersManager;
+import com.javalintest.backend.model.request.UserRequestModel;
+import com.javalintest.backend.model.response.Result;
 import io.javalin.http.Context;
 import io.javalin.plugin.openapi.annotations.HttpMethod;
 import io.javalin.plugin.openapi.annotations.OpenApi;
@@ -8,10 +12,6 @@ import io.javalin.plugin.openapi.annotations.OpenApiRequestBody;
 import io.javalin.plugin.openapi.annotations.OpenApiResponse;
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import com.javalin_test.backend.config.Constants;
-import com.javalin_test.backend.managers.UsersManager;
-import com.javalin_test.backend.model.request.UserRequestModel;
-import com.javalin_test.backend.model.response.Result;
 
 @Singleton
 public class UserCreationController extends UserController {
@@ -29,8 +29,7 @@ public class UserCreationController extends UserController {
       path = "/" + ROOT_PATH + Constants.USER_CREATION_PATH,
       method = HttpMethod.POST,
       tags = {"User"},
-      requestBody =
-          @OpenApiRequestBody(content = {@OpenApiContent(from = UserRequestModel.class)}),
+      requestBody = @OpenApiRequestBody(content = {@OpenApiContent(from = UserRequestModel.class)}),
       responses = {
         @OpenApiResponse(status = "201"),
         @OpenApiResponse(

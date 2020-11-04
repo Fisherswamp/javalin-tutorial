@@ -1,7 +1,7 @@
-package com.javalin_test.backend.modules;
+package com.javalintest.backend.modules;
 
 import com.google.inject.AbstractModule;
-import com.javalin_test.backend.startup.Startup;
+import com.javalintest.backend.startup.Startup;
 
 public class MainModule extends AbstractModule {
   @Override

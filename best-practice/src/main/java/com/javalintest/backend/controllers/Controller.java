@@ -1,7 +1,7 @@
-package com.javalin_test.backend.controllers;
+package com.javalintest.backend.controllers;
 
-import com.javalin_test.backend.config.Constants;
-import com.javalin_test.backend.model.response.Result;
+import com.javalintest.backend.config.Constants;
+import com.javalintest.backend.model.response.Result;
 import io.javalin.http.Context;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

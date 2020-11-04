@@ -1,4 +1,4 @@
-package com.javalin_test.backend.model.request;
+package com.javalintest.backend.model.request;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

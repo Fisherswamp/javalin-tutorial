@@ -1,11 +1,11 @@
-package com.javalin_test.backend.startup;
+package com.javalintest.backend.startup;
 
 import com.google.inject.Inject;
+import com.javalintest.backend.startup.entrypoint.AppEntrypoint;
+import com.javalintest.backend.startup.entrypoint.EntrypointType;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;
-import com.javalin_test.backend.startup.entrypoint.AppEntrypoint;
-import com.javalin_test.backend.startup.entrypoint.EntrypointType;
 
 public class Startup {
   @Inject(optional = true)

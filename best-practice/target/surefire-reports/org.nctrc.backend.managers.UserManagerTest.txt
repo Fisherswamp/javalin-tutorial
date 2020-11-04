@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.nctrc.backend.managers.UserManagerTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.nctrc.backend.managers.UserManagerTest

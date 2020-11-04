@@ -10,7 +10,6 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 import org.nctrc.backend.config.Constants;
 import org.nctrc.backend.managers.UsersManager;
-import org.nctrc.backend.model.request.NewUserRequestModel;
 import org.nctrc.backend.model.request.UserRequestModel;
 import org.nctrc.backend.model.response.Result;
 
@@ -31,7 +30,7 @@ public class UserCreationController extends UserController {
       method = HttpMethod.POST,
       tags = {"User"},
       requestBody =
-          @OpenApiRequestBody(content = {@OpenApiContent(from = NewUserRequestModel.class)}),
+          @OpenApiRequestBody(content = {@OpenApiContent(from = UserRequestModel.class)}),
       responses = {
         @OpenApiResponse(status = "201"),
         @OpenApiResponse(
@@ -51,11 +50,11 @@ public class UserCreationController extends UserController {
             content = {@OpenApiContent(from = Result.class)}),
       })
   public void createUser(final Context ctx) {
-    final NewUserRequestModel userModel = validateBody(ctx, NewUserRequestModel.class);
+    final UserRequestModel userModel = validateBody(ctx, UserRequestModel.class);
     if (userModel == null) {
       return;
     }
-    final Result result = manager.createAndSigninUser(userModel);
+    final Result result = manager.createUser(userModel);
     if (this.resultIsIn2xxAndHandle(result, ctx)) {
       ctx.status(201);
     }

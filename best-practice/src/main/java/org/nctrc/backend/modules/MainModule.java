@@ -7,6 +7,6 @@ public class MainModule extends AbstractModule {
   @Override
   protected void configure() {
     bind(Startup.class);
-    install(new NCTRCModule());
+    install(new JavalinExampleModule());
   }
 }
